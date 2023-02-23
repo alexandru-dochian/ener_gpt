@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EnerGPT</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./index.js" defer type="module"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="inputRegulationSection">
+                <form>
+                    <label for="regulation">Upload regulation:</label>
+                    <input
+                        type="file"
+                        id="regulation"
+                        name="regulation"
+                        value="0" />
+                </form>
+            </div>
+            <div id="outputRegulationSection">
+                <div id="inputDataSection">
+                    <form>
+                        <label for="emissions">Emissions 2023 (tonne CO2):</label>
+                        <input
+                            type="number"
+                            id="emissions"
+                            name="emissions"
+                            value="0" />
+                        <input
+                            type="submit"
+                            value="Compute"
+                            id="handleCompute" />
+                    </form>
+                </div>
+                <div id="tableSection">
+                    <table id="table">
+                        <thead>
+                            <th>Year</th>
+                            <th>Carbon Price ($)</th>
+                            <th>Emissions</th>
+                            <th>Emissions Limit</th>
+                            <th>Position</th>
+                            <th>Cost ($)</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
