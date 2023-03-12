@@ -26,15 +26,37 @@ body {
     align-items: center;
 }
 
-#inputRegulationSection {
+.row {
     /* dimensions */
-    flex: 0.2;
     width: 100%;
+
+    /* content display */
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    /* position */ 
+    align-self: flex-start;
+
+    /* other */ 
+    box-shadow: 0 64px 64px 0 #b8e0d2;
+}
+
+.content {
+    /* position */   
+    margin-left: 20%;
 
     /* content display */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#inputRegulationSection {
+    /* dimensions */
+    flex: 0.2;
+    width: 100%;
 }
 
 #outputRegulationSection {
@@ -78,10 +100,6 @@ body {
 }
 
 #table {
-    /* dimensions */
-    width: 60%;
-    margin-top: 0px;
-
     /* others */
     background-color: #92ce80;
     table-layout: fixed;

@@ -9,41 +9,88 @@
     <body>
         <div class="container">
             <div id="inputRegulationSection">
-                <form>
-                    <label for="regulation">Upload regulation:</label>
-                    <input
-                        type="file"
-                        id="regulation"
-                        name="regulation"
-                        value="0" />
-                </form>
+                <div class="row">
+                    <div class="info">
+                        <h2>Step 1.</h2>
+                        <p>Please upload any legal/technical document.</p>
+                        <p>As of right now you can upload anything.</p>
+                        <p>The system won't actually process the file.</p>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <label for="regulation">Upload regulation:</label>
+                            <input
+                                type="file"
+                                id="regulation"
+                                name="regulation"
+                                value="0" />
+                        </form>
+                    </div>
+                </div>
             </div>
             <div id="outputRegulationSection">
                 <div id="inputDataSection">
-                    <form>
-                        <label for="emissions">Emissions 2023 (tonne CO2):</label>
-                        <input
-                            type="number"
-                            id="emissions"
-                            name="emissions"
-                            value="0" />
-                        <input
-                            type="submit"
-                            value="Compute"
-                            id="handleCompute" />
-                    </form>
+                    <div class="row">
+                        <div class="info">
+                            <h2>Step 2.</h2>
+                            <p>
+                                The system will provide you the necessary inputs
+                                to solve the regulation.
+                            </p>
+                            <p>
+                                As of right now there is only one input for
+                                emissions in 2023.
+                            </p>
+                            <p>
+                                This input will be used to compute the allowed
+                                emissions up to 2030.
+                            </p>
+                        </div>
+                        <div class="content">
+                            <form>
+                                <label for="emissions"
+                                    >Emissions 2023 (tonne CO2):</label
+                                >
+                                <input
+                                    type="number"
+                                    id="emissions"
+                                    name="emissions"
+                                    value="0" />
+                                <input
+                                    type="submit"
+                                    value="Compute"
+                                    id="handleCompute" />
+                            </form>
+                        </div>
+                    </div>
                 </div>
                 <div id="tableSection">
-                    <table id="table">
-                        <thead>
-                            <th>Year</th>
-                            <th>Carbon Price ($)</th>
-                            <th>Emissions</th>
-                            <th>Emissions Limit</th>
-                            <th>Position</th>
-                            <th>Cost ($)</th>
-                        </thead>
-                    </table>
+                    <div class="row">
+                        <div class="info">
+                            <h2>Step 3.</h2>
+                            <p>
+                                The system will consider that a compliance regulation has been inputted.
+                            </p>
+                            <p>
+                                Carbon prices and energy factors are mocked values.
+                            </p>
+                            <p>
+                                This is an example of a possible result.
+                            </p>
+                        </div>
+                        <div class="content">
+                            <table id="table">
+                                <thead>
+                                    <th>Year</th>
+                                    <th>Carbon Price ($)</th>
+                                    <th>Emissions</th>
+                                    <th>Emissions Limit</th>
+                                    <th>Position</th>
+                                    <th>Cost ($)</th>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
